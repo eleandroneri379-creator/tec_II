@@ -7,7 +7,7 @@ def iniciar_agenda():
 
     layout = [
         [sg.Text("Nome:"), sg.Input(key="nome")],
-        [sg.Text("Data (AAAA-MM-DD):"), sg.Input(key="data")],
+        [sg.Text("Data (DD-MM-AAAA):"), sg.Input(key="data")],
         [sg.Text("Descrição:"), sg.Input(key="descricao")],
         [sg.Button("Adicionar"), sg.Button("Listar"), sg.Button("Excluir"), sg.Button("Sair")],
         [sg.Output(size=(60, 10))]
