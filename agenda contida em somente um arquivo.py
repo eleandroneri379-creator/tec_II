@@ -51,15 +51,15 @@ def iniciar_agenda():
             break
         elif evento == "Adicionar":
             adicionar_evento(valores["nome"], valores["data"], valores["descricao"])
-            print("✅ Evento adicionado!\n")
+            print(" Evento adicionado!\n")
         elif evento == "Listar":
-            print("📅 Eventos cadastrados:")
+            print(" Eventos cadastrados:")
             for e in listar_eventos():
                 print(f"{e[0]} | {e[1]} | {e[2]}")
             print()
         elif evento == "Excluir":
             excluir_evento(valores["nome"])
-            print(f"🗑️ Evento '{valores['nome']}' excluído.\n")
+            print(f" Evento '{valores['nome']}' excluído.\n")
 
     janela.close()
 
